@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <script>
+        var name = prompt("Enter your name:");
+        var phone = prompt("Enter your phone number:");
+        var email = prompt("Enter your email:");
+        var password = prompt("Enter your password:");
+        var confirmPassword = prompt("Confirm your password:");
+
+        if(name=="" || phone==""||email==""||password==""||confirmPassword==""){
+            alert("Error: Please fill in all the fields.");
+        }
+        else if (password !== confirmPassword){
+            alert("Password Not matched.");
+        }
+        else{
+            alert("Successfully Registered");
+        }
+    </script>
+</body>
+
+</html>
